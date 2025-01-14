@@ -1,0 +1,171 @@
+/* 
+Подключение шрифтов
+*/
+
+@font-face {
+    font-family: "TTLakes";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/TTLakes-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-style: bold;
+    font-weight: 700;
+    src: url("./fonts/TTLakes-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-style: medium;
+    font-weight: 500;
+    src: url("./fonts/TTLakes-Medium.woff") format("woff");
+  }
+
+/* 
+Общие стили
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(248, 248, 248);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  font-family: TTLakes;
+}
+
+p {
+  margin: 0;
+}
+
+/* 
+Стили для Header
+*/
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.header__icon--search {
+  margin-left: 75px;
+}
+
+.header__icon--logo {
+  margin-left: 18px;
+}
+
+/* 
+Стили для меню
+*/
+.mobile__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.mobile-menu__list {
+  display: flex;
+}
+
+a {
+  font-size: 20px;
+  font-family: TTLakes;
+  font-weight: 500;
+}
+
+.mobile-menu__list a {
+  display: block;
+  height: 50px;
+  padding-top: 5px;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu__list a.active {
+  color: rgb(126, 126, 130);
+  border-left: solid 5px rgb(65, 246, 215);
+  border-radius: -50%;
+}
+
+.mobile-menu__list a:hover {
+  background-color: darkseagreen;
+  opacity: 0.8;
+}
+
+/* 
+Стили для footer
+*/
+
+.footer__icons {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  gap: 15px;
+}
+
+.footer__contacts {
+  display:flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.footer__email{
+color: rgb(27, 28, 33);
+  font-family: TTLakes;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer__number {
+  color: rgb(27, 28, 33);
+  font-family: TTLakes;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__lang_switch {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  color: rgb(27, 28, 33);
+  font-family: TTLakes;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__lang--switch a.active {
+  color: rgb(126, 126, 130);
+}

@@ -125,9 +125,10 @@ button {
 }
 
 a {
-  font-size: 16px;
+  font-size: 18px;
   font-family: TTLakes;
   font-weight: 500;
+  vertical-align: center;
 }
 
 .menu__list a {
@@ -140,6 +141,7 @@ a {
 
 .menu__list_active {
   color: rgb(126, 126, 130);
+  padding-left: 0;
 }
 
 
@@ -148,6 +150,7 @@ a {
   height: 40px;
   width: 4px;
   position: absolute;
+  left: 0px;
 }
 
 .menu__list a:hover {
